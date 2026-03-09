@@ -36,6 +36,8 @@ function showIssues(issues) {
     return;
   }
 
+  // card functions and data
+
   issues.forEach (function (issue) {
     const div = document.createElement("div");
 
