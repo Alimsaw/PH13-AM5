@@ -41,9 +41,7 @@ function showIssues(issues) {
   issues.forEach (function (issue) {
     const div = document.createElement("div");
 
-    div.className = `card bg-base-100 shadow-sm border-t-[5px] ${
-      issue.status == "open" ? "border-green-500" : "border-purple-500"
-    } rounded-2xl cursor-pointer`;
+    div.className = `card bg-base-100 shadow-sm border-t-[5px] ${issue.status == "open" ? "border-green-500" : "border-purple-500"} rounded-2xl cursor-pointer`;
 
     div.innerHTML = `
       <div class="card-body gap-5">
@@ -63,9 +61,7 @@ function showIssues(issues) {
 
         <div class="card-actions justify-start">
           ${ issue.labels && issue.labels[0] ? `<div class="btn rounded-3xl bg-[#feecec] border border-[#EF4444] text-[12px] text-[#EF4444]">
-                   <img src="./images/BugDroid.svg" alt=""> ${issue.labels[0].toUpperCase()}
-                 </div>`: ""
-          }
+          <img src="./images/BugDroid.svg" alt=""> ${issue.labels[0].toUpperCase()}</div>`: ""}
 
           ${
             issue.labels && issue.labels[1]
