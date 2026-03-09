@@ -1,3 +1,5 @@
+// All variables
+
 const allBtn = document.getElementById ("allBtn");
 const openBtn = document.getElementById ("openBtn");
 const closedBtn = document.getElementById ("closedBtn");
