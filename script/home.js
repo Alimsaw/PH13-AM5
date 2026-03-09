@@ -99,10 +99,7 @@ function openIssueModal(issue) {
       if (label.toLowerCase() == "bug") {
         labelsHtml += `
           <span class="inline-flex items-center rounded-full border border-[#F5B5B5] bg-[#FFF1F1] px-5 py-2 text-[12px] font-medium text-[#EF4444]">
-            <img class="mr-2" src="./images/BugDroid.svg" alt="">
-            ${label.toUpperCase()}
-          </span>
-        `;
+            <img class="mr-2" src="./images/BugDroid.svg" alt="">${label.toUpperCase()}</span>`;
       } else if (label.toLowerCase() == "help wanted") {
         labelsHtml += `
           <span class="inline-flex items-center rounded-full border border-[#F4D06F] bg-[#FFF8E6] px-5 py-2 text-[12px] font-medium text-[#D97706]">
@@ -111,11 +108,7 @@ function openIssueModal(issue) {
           </span>
         `;
       } else {
-        labelsHtml += `
-          <span class="inline-flex items-center rounded-full border px-5 py-2 text-[18px] font-medium text-[#64748B]">
-            ${label}
-          </span>
-        `;
+        labelsHtml += `<span class="inline-flex items-center rounded-full border px-5 py-2 text-[18px] font-medium text-[#64748B]">${label}</span>`;
       }
     });
   }
