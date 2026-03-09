@@ -22,7 +22,7 @@
 
 
 </head>
-<body>
+<body class="bg-[#f8fafc]">
     <header>
         <div class="navbar bg-base-100 shadow-sm flex justify-between px-8 py-4 md:px-20 py-4">
   <div class="flex gap-1 items-center">
@@ -53,5 +53,65 @@
   </div>
 </div>
     </header>
+
+    <section class="mt-[60px] mb-[16px] px-[50px] sm:px-[80px] md:px-[120px] lg:px-[180px] xl:px-[245px]">
+      <div class="flex gap-2 shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] p-6 mx-auto">
+        <button id="allBtn" class="btn flex items-center gap-2 text-[12px] md:text-[16px] font-semibold text-[#64748B]">All</button>
+        <button id="openBtn" class="btn flex items-center gap-2 text-[12px] md:text-[16px] font-semibold text-[#64748B]">Open</button>
+        <button id="closedBtn" class="btn flex items-center gap-2 text-[12px] md:text-[16px] font-semibold text-[#64748B]">Closed</button>
+      </div>
+    </section>
+
+    <section class="px-[50px] sm:px-[80px] md:px-[120px] lg:px-[180px] xl:px-[245px]">
+      <div class="p-6 shadow-[0_1px_6px_0_rgba(0,0,0,0.08)] flex items-center justify-between max-w-[1440px]">
+          <div class="flex items-center gap-2">
+              <div class="rounded-3xl bg-[#ece4ff] p-2">
+                  <img src="./images/Aperture.png" alt="">
+                </div>
+                <div>
+                  <p class="text-[20px] font-semibold text-[#1F2937]"><span id="issueCount">0</span> Issues</p>
+                  <p class="text-[16px] font-normal text-[#64748B]">Track and manage your project issues</p>
+              </div>
+          </div>
+        <div class="flex gap-4">
+          <div class="flex gap-2">
+              <img class="max-w-[12px]" src="./images/Ellipse 2.svg" alt="">
+              <p>Open</p>
+          </div>
+          <div class="flex gap-2">
+              <img class="max-w-[12px]" src="./images/Ellipse 2 (1).svg" alt="">
+              <p>Closed</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+          <div class="px-[50px] sm:px-[80px] md:px-[120px] lg:px-[180px] xl:px-[245px]">
+                    <div id="issueContainer" class="mt-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+
+                    </div>
+                </div>
+    </section>
+
+
+<!-- <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <!-- <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog> --> -->
+
+<section id="issueModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/20 px-4">
+  <div id="modalContent"></div>
+</section>
+
+    <script src="./script/home.js"></script>
 </body>
 </html>
