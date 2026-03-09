@@ -154,14 +154,8 @@ function openIssueModal(issue) {
             <p class="text-[16px] text-[#64748B]">Priority:</p>
             <div class="mt-3">
               <span class="inline-flex min-w-[94px] justify-center rounded-full ${
-                issue.priority == "high"
-                  ? "bg-[#EF4444] text-white"
-                  : issue.priority == "medium"
-                  ? "bg-[#F59E0B] text-white"
-                  : "bg-[#CBD5E1] text-[#334155]"
-              } px-6 py-2 text-[12px] font-medium">
-                ${(issue.priority || "No Priority").toUpperCase()}
-              </span>
+                issue.priority == "high" ? "bg-[#EF4444] text-white" : issue.priority == "medium" ? "bg-[#F59E0B] text-white" : "bg-[#CBD5E1] text-[#334155]"
+              } px-6 py-2 text-[12px] font-medium">${(issue.priority || "No Priority").toUpperCase()}</span>
             </div>
           </div>
 
@@ -169,23 +163,21 @@ function openIssueModal(issue) {
       </div>
 
       <div class="mt-10 flex justify-end">
-        <button id="closeModalBtn" class="btn border-0 rounded-[10px] bg-[#4F08FF] px-10 text-[16px] font-semibold text-white shadow-none hover:bg-[#4300e6]">
-          Close
-        </button>
+        <button id="closeModalBtn" class="btn border-0 rounded-[10px] bg-[#4F08FF] px-10 text-[16px] font-semibold text-white shadow-none hover:bg-[#4300e6]">Close</button>
       </div>
     </div>
   `;
 
-  issueModal.classList.remove("hidden");
-  issueModal.classList.add("flex");
+  issueModal.classList.remove ("hidden");
+  issueModal.classList.add ("flex");
 
   document.getElementById("closeModalBtn").addEventListener("click", closeIssueModal);
 }
 
 // modal close
 function closeIssueModal() {
-  issueModal.classList.add("hidden");
-  issueModal.classList.remove("flex");
+  issueModal.classList.add ("hidden");
+  issueModal.classList.remove ("flex");
   modalContent.innerHTML = "";
 }
 
