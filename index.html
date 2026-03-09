@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="./images/favicon/avengers-1.svg">
+
+    <!-- tailwind & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+   <link rel="stylesheet" href="./style/style.css">
+
+</head>
+<body>
+
+    <section class="min-h-screen flex items-center justify-center bg-[#F3F4F6] p-8 md:p-[50]">
+      <main class="w-full max-w-[743px] bg-white rounded-xl shadow-md p-8">
+        <div class="flex flex-col items-center text-center mb-8">
+          <img class="max-w-[100px] mb-[24px]" src="./images/github-logo.png" alt="">
+          <p class="text-[24px] font-semibold text-[#1F2937]">
+            GitHub Issues Tracker
+          </p>
+          <p class="text-[16px] from-neutral-400 text-[#64748B]">
+            Sign in to manage your issues
+          </p>
+        </div>
+ 
+        <div class="card-body flex justify-center">
+          <div class="w-full">
+            <fieldset class="fieldset w-full">
+              <label class="label">Username</label>
+              <input id="login-user" type="text" class="input input-bordered w-full" placeholder="Enter Username" />
+              <p class="text-[14px] from-neutral-400 text-[#4A00FF] mb-[15px]">Default: admin</p>
+              <label class="label w-full">Password</label>
+              <input id="login-pass" type="password" class="input w-full" placeholder="Enter Password" />
+              <p class="text-[14px] from-neutral-400 text-[#4A00FF]">Default: admin123</p>
+              <button id="login-btn" class="btn btn-primary">Sign In</button>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-[15px] mb-[25px]">
+          <hr class="flex-1 border text-[#E4E4E7]">
+          <p class="text-[16px] from-neutral-400 text-[#64748B]">
+            OR
+          </p>
+          <hr class="flex-1 border text-[#E4E4E7]">
+        </div>
+
+        <div class="flex justify-center mb-[12px]">
+          <p class="text-[16px] font-neutral-400 text-[#64748B]">
+            Demo Credentials:
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center p-[25px]} bg-[#F8FAFC] rounded">
+          <p class="font-normal text-[#64748B]">
+            <span class="font-semibold text-[#1F2937]">
+              Username:
+            </span>
+             admin
+            </p>
+          <p class="font-normal text-[#64748B]"><span class="font-semibold text-[#1F2937]">
+            Password:
+          </span>
+           admin123
+          </p>
+        </div>
+
+      </main>
+
+    </section>
+    
+    <script src="./login.js"></script>
+
+</body>
+</html>

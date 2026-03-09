@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <title>Login Page</title>
+    <link rel="icon" href="./images/favicon/avengers-1.svg">
+
+    <!-- tailwind & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+   <link rel="stylesheet" href="./style/style.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-sm flex justify-between px-8 py-4 md:px-20 py-4">
+  <div class="flex gap-1 items-center">
+    <img class="max-w-[37px]" src="./images/github-logo.png" alt="">
+    <p class="text-[14px] md:text-[24px] font-semibold text-[#1F2937]">GitHub Issues Tracker</p>
+  </div>
+  <div class="flex gap-2">
+    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button">
+        <div>
+            <button class="btn btn-primary flex items-center gap-2 text-[12px] md:text-[16px] font-semibold text-[#ffffff]"> <img class="w-2 h-2 md:w-4 h-4" src="./images/plus.png" alt="">New Issue</button>
+        </div>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li>
+          <a class="justify-between">
+            Profile
+            <span class="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    </header>
+</body>
+</html>
